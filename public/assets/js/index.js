@@ -188,7 +188,8 @@ $('#all-left').on('click', () => {
     startTimer(0);
     $('.controls').css('display', 'none');
 });
-$('#submit').on('click', () => {
+$('#submit').on('click', (e) => {
+    e.preventDefault();
     const total_seconds = +$('#custom').val() * 60;
     $('#custom').val('');
     startTimer(total_seconds);
