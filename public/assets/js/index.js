@@ -6,7 +6,7 @@ setInterval(() => {
     const time = parseInt($('#time-left').text());
     $('#time-left').css(
         'color',
-        `rgb(${255 - 4.25 * time}, ${4.25 * time}, 255)`
+        `rgb(${255 - 4.25 * time}, ${4.25 * time}, 0)`
     );
 }, 1 * 1000);
 setInterval(() => {

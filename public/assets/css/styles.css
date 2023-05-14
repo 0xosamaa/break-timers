@@ -37,24 +37,32 @@
     font-size: 8rem;
 }
 
-#time-left{
+#time-left {
     font-size: 3rem;
 }
 
-#mute{
+#mute {
     display: none;
 }
 
-.error{
+.error {
     display: none;
 }
 
-.end{
+.end {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.end #end-break{
+.end #end-break {
     display: none;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.1rem 1rem;
+    text-align: center;
 }
