@@ -157,6 +157,11 @@ const endTimer = () => {
         type: 'DELETE',
         success: function (data) {
             $('.controls').css('display', 'flex');
+            $('audio#almost')[0].pause();
+            $('audio#done')[0].currentTime = 0;
+            $('audio#done')[0].pause();
+            $('audio#almost')[0].currentTime = 0;
+            $('#mute').css('display', 'none');
         },
         error: function (err) {
             $('.error').text(err.responseJSON.error);
