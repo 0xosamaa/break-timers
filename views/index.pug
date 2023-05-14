@@ -1,0 +1,29 @@
+extends layout.pug
+block title
+    title Break
+block content
+    <div id="container">
+        <div class="alert alert-danger error" role="alert"></div>
+        <h3>Today's break: <span id="time-left">0</span></h3>
+        <div id="countdown">
+            <h1>00:00:00</h1>
+            <div class="controls">
+                <button class="btn btn-warning m-3" id="mins-15">15 Mins</button>
+                <button class="btn btn-warning m-3" id="all-left">All what's left</button>
+                <button class="btn btn-warning m-3" id="mins-30">30 Mins</button>
+                <h4>Or:</h4> 
+                <input type="number" class="btn btn-warning m-3" id="custom" name="custom" placeholder="Minutes">
+                <button class="btn btn-warning m-3" id="submit">Start</button>
+            </div>
+            <div class="end">
+                <button class="btn btn-danger m-3" id="end-break">End Break</button>
+                <button class="btn btn-danger m-3" id="mute">Mute</button>
+            </div>
+        </div>
+        <audio id="almost">
+            <source src="/assets/audio/almost.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="done">
+            <source src="/assets/audio/done.mp3" type="audio/mpeg">
+        </audio>
+    </div>
